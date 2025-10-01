@@ -1,0 +1,47 @@
+{
+  "name": "@carohauta/pong-mini",
+  "version": "0.1.0",
+  "description": "A tiny Pong game",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/pong.d.ts",
+      "import": "./dist/pong.js"
+    },
+    "./react": {
+      "types": "./dist/PongGame.d.ts",
+      "import": "./dist/PongGame.js"
+    },
+    "./styles.css": "./src/styles.css"
+  },
+  "scripts": {
+    "dev": "node dev-server.js",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json"
+  },
+  "style": "./src/styles.css",
+  "files": [
+    "dist",
+    "src/styles.css"
+  ],
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "keywords": [
+    "pong",
+    "game",
+    "embed",
+    "widget",
+    "canvas",
+    "react"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carohauta/pong-mini.git"
+  }
+}

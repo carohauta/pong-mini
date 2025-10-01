@@ -1,0 +1,16 @@
+{
+  // Launches Chrome to open index.html directly from the workspace
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Open Pong (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "dev-server",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
+
+

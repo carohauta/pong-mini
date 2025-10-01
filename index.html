@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pong Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="root" style="width: 100vw; display: flex; align-items: center; justify-content: center;"></div>
+  <script type="module">
+    import { createPong } from './dist/pong.js';
+    window.addEventListener('load', () => {
+      const slot = document.getElementById('root');
+      const widget = createPong(slot, { responsive: true, maxWidth: Math.min(window.innerWidth * 0.9, 800) });
+      window.pongWidget = widget;
+    });
+  </script> 
+  
+</body>
+</html>
+
+

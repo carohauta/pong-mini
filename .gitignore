@@ -1,0 +1,9 @@
+# Keep VS Code configs under version control
+!.vscode/
+
+# Node artifacts (if any in future)
+node_modules/
+npm-debug.log*
+dist/
+
+
