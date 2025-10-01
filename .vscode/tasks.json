@@ -14,7 +14,7 @@
         "background": {
           "activeOnStart": true,
           "beginsPattern": ".*",
-          "endsPattern": "Dev server running at http://localhost:5173"
+          "endsPattern": "Dev server running at http://localhost:3000"
         }
       }
     }
